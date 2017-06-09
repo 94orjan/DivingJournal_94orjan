@@ -22,6 +22,14 @@ namespace Divingjournal2
                             "~/Scripts/WebForms/TreeView.js",
                             "~/Scripts/WebForms/WebParts.js"));
 
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                "~/Content/bootstrap.css",
+                "~/Content/bootsrap.min.css",
+                "~/Content/default.css",
+                 "~/Content/fonts.min.css",
+                  "~/Content/Site.min.css"
+                  ));
+
             // Order is very important for these files to work, they have explicit dependencies
             bundles.Add(new ScriptBundle("~/bundles/MsAjaxJs").Include(
                     "~/Scripts/WebForms/MsAjax/MicrosoftAjax.js",
