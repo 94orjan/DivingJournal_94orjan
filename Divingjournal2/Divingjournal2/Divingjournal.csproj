@@ -247,7 +247,6 @@
     <Content Include="images\hvl_logo.jpg" />
     <Content Include="MyStyle.css" />
     <Content Include="Content\bootstrap-def.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -24,7 +24,6 @@ namespace Divingjournal2
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/bootstrap.css",
-                "~/Content/bootsrap.min.css",
                 "~/Content/default.css",
                  "~/Content/fonts.min.css",
                   "~/Content/Site.min.css"
