@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h1>Elektronisk loggføring av dykkerjournaler</h1>
+    <h1>Elektronisk dritt av dykkerjournaler</h1>
     
         <asp:Table ID="Table1" runat="server" CellSpacing="50" HorizontalAlign="Center" CellPadding="50">
             <asp:TableRow>
