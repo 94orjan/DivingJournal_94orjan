@@ -7,7 +7,7 @@
         <asp:Table ID="Table1" runat="server" CellSpacing="50" HorizontalAlign="Center" CellPadding="50">
             <asp:TableRow>
                 <asp:TableCell>
-    <asp:Button ID="NewJournalButton" runat="server" Text="Opprett journal" Width="300" Height="300" OnClick="NewJournalButton_Click" CssClass="btn-primary" Font-Size="XX-Large" />
+    <asp:Button ID="NewJournalButton" runat="server" Text="Oppreournal" Width="300" Height="300" OnClick="NewJournalButton_Click" CssClass="btn-primary" Font-Size="XX-Large" />
     </asp:TableCell>
                 <asp:TableCell>
     <asp:Button ID="GetJournalButton" runat="server" Text="Mine journaler" Width="300" Height="300" OnClick="GetJournalButton_Click" CssClass="btn-primary" Font-Size="XX-Large"/>
