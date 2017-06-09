@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Divingjournal", "Divingjournal2\Divingjournal.csproj", "{8D6D08AD-2C3E-4D65-AAFE-F5EB729FB994}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiverLibrary", "DiverLibrary\DiverLibrary.csproj", "{D5BB7D50-7C9E-4312-AEC5-86D6F575EA93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D6D08AD-2C3E-4D65-AAFE-F5EB729FB994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6D08AD-2C3E-4D65-AAFE-F5EB729FB994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D6D08AD-2C3E-4D65-AAFE-F5EB729FB994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D6D08AD-2C3E-4D65-AAFE-F5EB729FB994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5BB7D50-7C9E-4312-AEC5-86D6F575EA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5BB7D50-7C9E-4312-AEC5-86D6F575EA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5BB7D50-7C9E-4312-AEC5-86D6F575EA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5BB7D50-7C9E-4312-AEC5-86D6F575EA93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

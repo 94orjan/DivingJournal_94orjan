@@ -1,0 +1,19 @@
+﻿body {
+    
+}
+.newStyle1 {
+    border: 1px solid #000080;
+    padding: 1px 2px 1px 2px;
+    font-size: x-large;
+    empty-cells: show;
+    font-family: "Calibri Light";
+    margin: 0px;
+}
+.tableCellHeaderStyle {
+    padding: 1px;
+    font-size: x-large;
+    empty-cells: show;
+    font-family: "Calibri Light";
+    margin: 0px;
+    border: 1px none #000080;
+}

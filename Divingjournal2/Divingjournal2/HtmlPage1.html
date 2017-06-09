@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!-- button to trigger modal -->
+    <a href="auth.php" data-target="#myModal" data-toggle="modal">remote modal</a>
+
+    <!-- hidden fields to store modal result in -->
+    <input type="hidden" id="main-username">
+    <input type="hidden" id="main-result">
+
+    <!-- modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Modal test</h3>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+            <button class="btn btn-primary" onclick="login();">Login</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+//called when user clicks login
+function login() {
+    $("#main-username").val($("#modal-username").val());
+    $("#main-result").val($("#modal-result").val());
+    $("#myModal").modal("hide");
+}
+
+//called when the modal is closed, logs values grabbed from the modal in login()
+$('#myModal').on('hidden', function() {
+    console.log('username : '+$("#main-username").val());
+    console.log('result : '+$("#main-result").val());
+})
+    </script>
+
+</body>
+</html>
