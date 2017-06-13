@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using DiverLibrary;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Divingjournal2.Models
@@ -19,9 +18,9 @@ namespace Divingjournal2.Models
 
         public string diver_name { get; set; }
 
-        public OF_Type of_type { get; set; }
-        public Direct direct { get; set; }
-        public AirType airType { get; set; }
+        public string of_type { get; set; }
+        public string direct { get; set; }
+        public string airType { get; set; }
         public string nitroxType { get; set; }
         public bool repeatedAir { get; set; }
         public string N2GroupBeforeDive { get; set; }
@@ -44,17 +43,19 @@ namespace Divingjournal2.Models
         public string ascensionToFirstStop { get; set; }
         public string timeAtSafetyStop { get; set; }
         public string N2GroupAfterDive { get; set; }
-        public bool isEverythingOK { get; set; }
+        public string isEverythingOK { get; set; }
 
         public string left18m { get; set; }
         public string left15m { get; set; }
         public string left12m { get; set; }
         public string time12_0m { get; set; }
         public string reached15mInChamber { get; set; }
+        public string surfaceInterval { get; set; }
+        public string left15mInChamber { get; set; }
+        public string reached12mInChamber { get; set; }
         public string o2_1 { get; set; }
         public string o2_2 { get; set; }
         public string o2_3 { get; set; }
-        public string surfaceInterval { get; set; }
         public string air_1 { get; set; }
         public string air_2 { get; set; }
         public string air_3 { get; set; }

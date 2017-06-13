@@ -17,8 +17,8 @@
             <h1 id="h1Title"></h1>
             <asp:Panel ID="JournalTypeButtonPanel" runat="server">
 
-                <asp:Button ID="StandardDiveButton" runat="server" Text="Direkte dykk" Width="25%" OnClick="StandardDiveButton_Click" />
-                <asp:Button ID="SurfaceCompressionDiveButton" runat="server" Text="Overflatekompresjon" Width="25%" OnClick="SurfaceCompressionDiveButton_Click" />
+                <asp:Button ID="StandardDiveButton" runat="server" Text="Standarddykk" Width="25%" OnClick="StandardDiveButton_Click" />
+                <asp:Button ID="SurfaceCompressionDiveButton" runat="server" Text="Overflatedekompresjon" Width="25%" OnClick="SurfaceCompressionDiveButton_Click" />
                 <asp:Button ID="PressureChamberDiveButton" runat="server" Text="Trykkammer" Width="25%" OnClick="PressureChamberDiveButton_Click" />
 
                  <asp:Button ID="Local_Save_button" runat="server" Text="Mellomlagre" />
@@ -213,7 +213,7 @@
                             <asp:TableCell runat="server">Dykker 1</asp:TableCell>
                             <asp:TableCell ID="diver_1Cell" runat="server">
                                 <asp:TextBox ID="Diver_1TextBox" runat="server"></asp:TextBox>
-
+                                
 
 
 
@@ -236,7 +236,7 @@
 
                         <asp:TableRow ID="StandbyRow" runat="server">
 
-                            <asp:TableCell runat="server">Standby-/beredskapsdykker</asp:TableCell>
+                            <asp:TableCell runat="server">Dykker 3</asp:TableCell>
                             <asp:TableCell ID="TableCell6" runat="server">
                                 <asp:TextBox ID="StandbyTextBox" runat="server"></asp:TextBox>
 
@@ -386,7 +386,7 @@
 
             <asp:Panel runat="server" ID="SecondaryInfoPanel">
 
-                <div style="text-align: right; padding: 0px; height: 22px; width: auto;">
+                <div style="text-align: right; padding: 0px; margin:4px; height: 22px; width: auto;">
                     <asp:Table runat="server" ID="SecondaryInfoTable" Visible="True" HorizontalAlign="Left" Font-Size="Large">
                         <asp:TableRow ID="TableRow15" runat="server">
 
@@ -818,7 +818,9 @@
                                     <asp:TableCell ID="StandbyCell" runat="server">
 
 
-                                        <h4>Standby</h4>
+                                        <h4>Dykker 3</h4>
+                                        <p style="align-self:flex-end;"> <asp:CheckBox ID="Diver3_StandbyCheckBox" runat="server" Text="Standby" /> </p>
+                                        <br />
                                         <asp:DropDownList ID="SBOF_TypeDropDownList" runat="server">
                                             <asp:ListItem Value="0">OF Tungt</asp:ListItem>
 
@@ -854,10 +856,11 @@
 
                                         </asp:DropDownList>
 
+                                         <br />
 
                                         <asp:CheckBox ID="SBRepeatedAirCheckBox" Text="Gjentatt" runat="server" />
 
-                                        <br />
+                                         <br />
 
                                         <asp:Table ID="Table5" HorizontalAlign="Left" runat="server">
                                             <asp:TableRow ID="TableRow32" runat="server">
@@ -1208,7 +1211,7 @@
                                 <asp:TableCell runat="server">Dykker 1</asp:TableCell>
                                 <asp:TableCell runat="server">Standarddykk</asp:TableCell>
                                 <asp:TableCell runat="server">Dykker 2</asp:TableCell>
-                                <asp:TableCell runat="server">Standby</asp:TableCell>
+                                <asp:TableCell runat="server">Dykker 3</asp:TableCell>
                             </asp:TableRow>
                             <asp:TableRow runat="server">
                                 <asp:TableCell runat="server">
@@ -1635,7 +1638,7 @@
                                 <asp:TableCell runat="server">Dykker 1</asp:TableCell>
                                 <asp:TableCell runat="server">Overflatedekompresjonsdykk</asp:TableCell>
                                 <asp:TableCell runat="server">Dykker 2</asp:TableCell>
-                                <asp:TableCell runat="server">Standby</asp:TableCell>
+                                <asp:TableCell runat="server">Dykker 3</asp:TableCell>
                             </asp:TableRow>
                             <asp:TableRow runat="server">
                                 <asp:TableCell runat="server">
@@ -2824,7 +2827,7 @@
         <asp:TableRow>
             <asp:TableCell>Dykker 1</asp:TableCell>
             <asp:TableCell>Dykker 2</asp:TableCell>
-            <asp:TableCell>Standby</asp:TableCell>
+            <asp:TableCell>Dykker 3</asp:TableCell>
         </asp:TableRow>
 
         <asp:TableRow>

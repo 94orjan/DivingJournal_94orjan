@@ -22,6 +22,15 @@ namespace Divingjournal2.Account {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// WrongPasswordLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label WrongPasswordLabel;
+        
+        /// <summary>
         /// TextBoxUserName control.
         /// </summary>
         /// <remarks>
@@ -31,13 +40,13 @@ namespace Divingjournal2.Account {
         protected global::System.Web.UI.WebControls.TextBox TextBoxUserName;
         
         /// <summary>
-        /// UserNameError control.
+        /// RequiredFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator UserNameError;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
         /// TextBoxPassword control.

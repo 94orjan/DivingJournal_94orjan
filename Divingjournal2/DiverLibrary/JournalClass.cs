@@ -12,13 +12,13 @@ namespace DiverLibrary
     public class Journal
     {
 
-        
+
         int journalID;
         Subject subject;
         JournalType journalType;
         string courseNumber;
         string other;
-        
+
         string date;
         string location;
         string divingSpot;
@@ -42,7 +42,7 @@ namespace DiverLibrary
         {
             journalID = _journalID;
         }
-        
+
 
         public void test()
         {
@@ -387,36 +387,10 @@ namespace DiverLibrary
             }
         }
 
-     
-        
-        
-           
+
+
+
+
     }
-    public class Journal_chamber : Journal
-    {
-        int id;
-        string date;
-        string location;
-
-        string divingChief;
-        string divingLeader;
-        
-        string chamber;
-        string purpose;
-        string chamberOperator;
-        string chamberAssistent;
-        string doctor;
-        //not sure how to fix this efficiently
-        string diver_1, diver_2, diver_3, diver_4, diver_5, diver_6, diver_7, diver_8;
-        bool isChamberClear;
-        bool isOxygenClear;
-        bool isTreatmentClear;
-
-
-        public Journal_chamber(int _journalID) : base(_journalID)
-        {
-        }
-    }
-
    
 }

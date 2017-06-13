@@ -1,25 +1,22 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Divingjournal2._Default" %>
+﻿<%@ Page Title="Hjem" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Divingjournal2._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h1>Elektronisk dritt av dykkerjournaler</h1>
+     <link href="css/bootstrap.css" rel="stylesheet" />
+    <h1 class="h1">Elektronisk loggføring av dykkejournaler</h1>
     
-        <asp:Table ID="Table1" runat="server" CellSpacing="50" HorizontalAlign="Center" CellPadding="50">
-            <asp:TableRow>
-                <asp:TableCell>
-    <asp:Button ID="NewJournalButton" runat="server" Text="Oppreournal" Width="300" Height="300" OnClick="NewJournalButton_Click" CssClass="btn-primary" Font-Size="XX-Large" />
-    </asp:TableCell>
-                <asp:TableCell>
-    <asp:Button ID="GetJournalButton" runat="server" Text="Mine journaler" Width="300" Height="300" OnClick="GetJournalButton_Click" CssClass="btn-primary" Font-Size="XX-Large"/>
-                    </asp:TableCell>
-                <asp:TableCell>
-    <asp:Button ID="Button2" runat="server" Text="Søk etter journal" Width="300" Height="300" OnClick="Button2_Click" CssClass="btn-primary" Font-Size="XX-Large"/>
-                    </asp:TableCell>
-                </asp:TableRow>
-            </asp:Table>
-    <br />
-    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+        
    
-    
+    <div class="jumbotron container">
+         
+        <br />
+        <div class="btn-block col-md-12">
+            <asp:Button ID="NewJournalButton" runat="server" Text="Opprett journal" OnClick="NewJournalButton_Click" CssClass="btn-primary btn" Width="33%" Font-Size="XX-Large" />
+            <asp:Button ID="GetJournalButton" runat="server" Text="Mine journaler" OnClick="GetJournalButton_Click" CssClass="btn-primary btn" Width="33%" Font-Size="XX-Large"/>
+            <asp:Button ID="SearchJournalsButton" runat="server" Text="Søk etter journal" OnClick="SearchJournalsButton_Click" CssClass="btn-primary btn" Width="33%" Font-Size="XX-Large"/>      
+         </div>
+    </div>
+
+     <asp:Button ID="Button1" runat="server" Text="Opprett journal (gammel)" OnClick="NewJournalOldButton_Click" CssClass="btn-primary btn" Font-Size="Large" />
 
 </asp:Content>

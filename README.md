@@ -1,1 +1,1 @@
-# DivingJournal_94orjan
+# DivingJournal

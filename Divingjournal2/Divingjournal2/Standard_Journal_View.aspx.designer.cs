@@ -319,6 +319,15 @@ namespace Divingjournal2 {
         protected global::System.Web.UI.WebControls.GridView GridView7;
         
         /// <summary>
+        /// Diver1DetailsView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DetailsView Diver1DetailsView1;
+        
+        /// <summary>
         /// Diver1DetailsView0 control.
         /// </summary>
         /// <remarks>
@@ -380,6 +389,15 @@ namespace Divingjournal2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource Diver_1;
+        
+        /// <summary>
+        /// Diver_Dummy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource Diver_Dummy;
         
         /// <summary>
         /// Diver_2 control.

@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using DiverLibrary;
 using System.Diagnostics;
 
 namespace Divingjournal2
@@ -13,27 +12,27 @@ namespace Divingjournal2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string s = (string)Session["timeLabel"];
-            Label2.Text = s;
-
-            Debug.Write("Heipådeg");
-            
+            string s = (string)Session["timeLabel"];           
         }
 
         protected void NewJournalButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/new_journal.aspx");
+            Response.Redirect("/write_journal.aspx");
         }
 
         protected void GetJournalButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("/my_journals.aspx");
-
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void SearchJournalsButton_Click(object sender, EventArgs e)
         {
+            Response.Redirect("/search_journal.aspx");
+        }
 
+        protected void NewJournalOldButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/new_journal.aspx");
         }
     }
 }

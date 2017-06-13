@@ -9,7 +9,7 @@ namespace Divingjournal2.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(Divingjournal2.DAL.DivingJournalContext context)

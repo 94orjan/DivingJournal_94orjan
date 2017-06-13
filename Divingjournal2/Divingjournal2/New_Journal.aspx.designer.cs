@@ -1786,6 +1786,15 @@ namespace Divingjournal2 {
         protected global::System.Web.UI.WebControls.TableCell StandbyCell;
         
         /// <summary>
+        /// Diver3_StandbyCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox Diver3_StandbyCheckBox;
+        
+        /// <summary>
         /// SBOF_TypeDropDownList control.
         /// </summary>
         /// <remarks>

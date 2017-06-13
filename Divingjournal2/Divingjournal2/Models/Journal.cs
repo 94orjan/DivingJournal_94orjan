@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using DiverLibrary;
 
 namespace Divingjournal2.Models
 {
@@ -16,9 +15,13 @@ namespace Divingjournal2.Models
         //Bruker som skriver journalen
         public string username { get; set; }
 
-        public Subject subject { get; set; }
+        //public Subject subject { get; set; }
         public JournalType journalType { get; set; }
-        public Transport transport { get; set; }
+        //public Transport transport { get; set; }
+
+        public string subject { get; set; }
+        public string transport { get; set; }
+
         public string courseNumber { get; set; }
         public string other { get; set; }
         public string date { get; set; }
@@ -29,7 +32,7 @@ namespace Divingjournal2.Models
         public string divingleader_student { get; set; }
         public string diver_1 { get; set; }
         public string diver_2 { get; set; }
-        public string standby { get; set; }
+        public string diver_3 { get; set; }
         public string lineman_1 { get; set; }
         public string lineman_2 { get; set; }
         public string helpman { get; set; }
@@ -48,7 +51,7 @@ namespace Divingjournal2.Models
         //Links - to many
         public virtual ICollection<Diver_Standard> Diver_Standards { get; set; }
         public virtual ICollection<Diver_Compression> Diver_Compressions { get; set; }
-        public virtual ICollection<Diver_Pressurechamber> Diver_Pressurechambers { get; set; }
+    
 
     }
 }

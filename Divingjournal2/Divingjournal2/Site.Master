@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - HVL</title>
 
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -50,26 +52,15 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/New_Journal">Ny Journal</a></li>
-                    </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log out</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
+                        <li><a runat="server" href="~/Write_Journal">Opprett Journal</a></li>
+                        <li><a runat="server" href="~/My_Journals">Mine Journaler</a></li>
+                    </ul>   
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a><asp:Label ID="Label_User" runat="server" style="color:white" Text="Velkommen, "></asp:Label></a></li>
+                        
+                        <li><a><asp:Button CssClass="btn-primary btn" ID="Button2" runat="server" OnClick="B_Logout_Click" Text="Logg ut" /></a></li>
+                    </ul>                     
                 </div>
             </div>
         </div>

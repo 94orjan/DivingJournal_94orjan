@@ -13,15 +13,6 @@ namespace Divingjournal2 {
     public partial class _Default {
         
         /// <summary>
-        /// Table1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Table Table1;
-        
-        /// <summary>
         /// NewJournalButton control.
         /// </summary>
         /// <remarks>
@@ -40,21 +31,21 @@ namespace Divingjournal2 {
         protected global::System.Web.UI.WebControls.Button GetJournalButton;
         
         /// <summary>
-        /// Button2 control.
+        /// SearchJournalsButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button SearchJournalsButton;
         
         /// <summary>
-        /// Label2 control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

@@ -17,10 +17,9 @@ namespace Divingjournal2.Models
         public int Journal_CacheID { get; set; }
 
         public string diver_name { get; set; }
-        public Transport transport { get; set; }
-        public OF_Type of_type { get; set; }
-        public Direct direct { get; set; }
-        public AirType airType { get; set; }
+        public string of_type { get; set; }
+        public string direct { get; set; }
+        public string airType { get; set; }
         public string nitroxType { get; set; }
         public string repeatedAir { get; set; }
         public string breathingGear { get; set; }

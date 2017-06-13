@@ -52,9 +52,9 @@ namespace Divingjournal2.Models
         public string totalDivingTime { get; set; }
 
         public string N2GroupAfterDive { get; set; }
-        public bool isEverythingOK { get; set; }
+        public string isEverythingOK { get; set; }
 
-        string notes { get; set; }
-        string changelog { get; set; }
+        public string notes { get; set; }
+        public string changelog { get; set; }
     }
 }

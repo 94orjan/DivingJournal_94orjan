@@ -16,6 +16,12 @@ namespace Divingjournal2.Account
 {
     public partial class Login : System.Web.UI.Page
     {
+
+        protected override void OnInit(EventArgs e)
+        {
+            WrongPasswordLabel.Visible = false;
+        }
+
         protected void Button_Login_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=divingjournal.database.windows.net;Initial Catalog=DivingJournalDB;Integrated Security=False;User ID=djadmin;Password=DykkerUtdanningDB!5;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
@@ -25,11 +31,12 @@ namespace Divingjournal2.Account
             if(dt.Rows[0][0].ToString()== "1")
             {
                 Session["Username"] = TextBoxUserName.Text;
+                WrongPasswordLabel.Visible = false;
                 Response.Redirect("~/Default.aspx");
             }
             else
             {
-                Response.Write("Password is Not correct");
+                WrongPasswordLabel.Visible = true;
             }
         }
     }

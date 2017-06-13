@@ -7,6 +7,8 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
+using System.Windows.Forms;
+using System.Web.UI.HtmlControls;
 
 namespace Divingjournal2
 {
@@ -69,15 +71,35 @@ namespace Divingjournal2
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Username"] != null)
+            {
+                Label_User.Text = "Velkommen, " + Session["Username"].ToString();
+            }
+            else
+            {
+                Response.Redirect("~/Account/Login.aspx");
+            }
+        }
 
+        // Warning when loging off
+        public void B_Logout_Click(object sender, EventArgs e)
+        {
+            switch (MessageBox.Show("Alle ulagrede dokumenter vil gå tapt", "Logger ut", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                case DialogResult.Yes:
+                    Session["Username"] = null;
+                    Response.Redirect("~/Account/Login.aspx");
+                    break;
+                case DialogResult.No:
+                    
+                    break;
+
+            }
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }
-
-        
     }
-
 }

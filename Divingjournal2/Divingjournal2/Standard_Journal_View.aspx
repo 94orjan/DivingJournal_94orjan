@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Ferdig Journal</title>
     <style type="text/css">
         .auto-style1 {
             height: 17px;
@@ -12,11 +12,11 @@
     </style>
     </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" style="max-width:1000px">
         
-        <div style="padding: 1px; border-style: hidden; font-size:11px; color: #FFFFFF; font-family: Arial; background-color: #336699; text-align:center">
+        <div style="padding: 1px; border-style: hidden; font-size:11px; font-family: Arial; text-align:center">
             
-            <table style="width: 100%;" id="MainTable">
+            <table style="width:100%" id="MainTable">
                 <tr>
                     <td>
                         <img width="25%" src="images/hvl_logo.jpg" /></td>
@@ -51,7 +51,9 @@
                                     <asp:GridView ID="DateLocationGridView" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" Width="100%" CellPadding="1" Height="16px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                                         <Columns>
 
-                                            <asp:BoundField DataField="date" HeaderText="Dato" SortExpression="date" />
+                                            <asp:BoundField DataField="date" HeaderText="Dato" SortExpression="date" >
+                                            
+                                            </asp:BoundField>
                                             <asp:BoundField DataField="location" HeaderText="Sted" SortExpression="location" />
                                             <asp:BoundField DataField="divingSpot" HeaderText="Dykkepost" SortExpression="divingSpot" />
 
@@ -454,18 +456,21 @@
                                 <Fields>
                                     <asp:BoundField DataField="of_type" HeaderText="of_type" SortExpression="of_type" ShowHeader="False">
                                         
+                                    
+                                        
                                     </asp:BoundField>
                                     <asp:BoundField DataField="direct" HeaderText="Direkte" SortExpression="direct" ShowHeader="False">
-                                       
+                                      
                                     </asp:BoundField>
                                     <asp:BoundField DataField="airType" HeaderText="airType" SortExpression="airType" ShowHeader="False">
-                                        
+                                      
                                     </asp:BoundField>
                                 </Fields>
                             </asp:DetailsView>
                             <asp:DetailsView ID="DetailsView2" runat="server" AutoGenerateRows="False" DataKeyNames="Id" DataSourceID="Diver_1" Width="100%">
                                 <Fields>
-                                    <asp:BoundField DataField="nitroxType" HeaderText="Nitrox %" SortExpression="nitroxType" />
+                                    <asp:BoundField DataField="nitroxType" HeaderStyle-ForeColor="AliceBlue" HeaderText="Nitrox %" SortExpression="nitroxType" />
+
                                      <asp:CheckBoxField DataField="repeatedAir" HeaderText="Gjentatt" SortExpression="repeatedAir" />
                                 </Fields>
                             </asp:DetailsView>

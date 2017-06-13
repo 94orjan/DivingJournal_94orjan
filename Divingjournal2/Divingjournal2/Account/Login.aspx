@@ -1,73 +1,64 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Divingjournal2.Account.Login" %>
 
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            font-size: medium;
-        }
-        .auto-style2 {
-            font-size: x-large;
-            text-align: center;
-        }
-        .auto-style3 {
-            text-align: center;
-        }
-        .auto-style4 {
-            width: 100%;
-        }
-        .auto-style5 {
-            width: 238px;
-        }
-        .auto-style6 {
-            width: 238px;
-            text-align: right;
-        }
-    </style>
+    <title>Logg inn</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
 </head>
+
 <body>
     <form id="form1" runat="server">
-    <div class="auto-style1">
-    
-        <h1 class="auto-style3" style="height: 34px"><strong><span class="auto-style2">Logg inn her</span><br />
-            </strong></h1>
-        </div>
-        <div class="auto-style3">
-            <table class="auto-style4">
-                <tr>
-                    <td class="auto-style6">UserName</td>
-                    <td style="text-align: left">
-                        <asp:TextBox ID="TextBoxUserName" runat="server" style="text-align: right" Width="180px"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="UserNameError" runat="server" ControlToValidate="TextBoxUserName" ErrorMessage="Please enter Username" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style6">Password</td>
-                    <td style="text-align: left">
-                        <asp:TextBox ID="TextBoxPassword" runat="server" style="text-align: left" TextMode="Password" Width="180px"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="PasswordError" runat="server" ControlToValidate="TextBoxPassword" ErrorMessage="Please enter password" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td style="text-align: left">
-                        <asp:Button ID="Button_Login" runat="server" OnClick="Button_Login_Click" style="text-align: left" Text="Login" Width="80px" />
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
-            <br />
-        </div>
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel runat="server">
+            <ContentTemplate>
+                <div class="container">
+                    <div class="jumbotron container">
+                        <div class=" alert-danger">
+                            <asp:Label runat="server" ID="WrongPasswordLabel" Visible="false" Text="Feil brukernavn eller passord. Prøv igjen."></asp:Label>
+                        </div>
+                        <div class="h2">
+                            <asp:Image runat="server" ImageUrl="~/images/HVL-logo_trimmet_1200x304.png" Width="25%" />
+                            <h2 class="h2">Velkommen</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <asp:Table runat="server" CssClass="table">
+                                <asp:TableRow>
+                                    <asp:TableCell runat="server">
+                                <div class="form-control-static text-info">Brukernavn</div>
+                                    </asp:TableCell>
+                                    <asp:TableCell runat="server">
+                                        <asp:TextBox ID="TextBoxUserName" runat="server" Style="text-align: left" CssClass="form-control"></asp:TextBox>
+                                    </asp:TableCell>
+                                    <asp:TableCell>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxUserName" ErrorMessage="Please enter username" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    </asp:TableCell>
+                                </asp:TableRow>
+                                <asp:TableRow>
+                                    <asp:TableCell runat="server">
+                                <div class="form-control-static text-info">Passord</div>
+                                    </asp:TableCell>
+                                    <asp:TableCell runat="server">
+                                        <asp:TextBox ID="TextBoxPassword" TextMode="Password" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </asp:TableCell>
+                                    <asp:TableCell>
+                                        <asp:RequiredFieldValidator ID="PasswordError" runat="server" ControlToValidate="TextBoxPassword" ErrorMessage="Please enter password" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    </asp:TableCell>
+                                </asp:TableRow>
+                                <asp:TableRow>
+                                    <asp:TableCell>
+                                        <asp:Button ID="Button_Login" runat="server" OnClick="Button_Login_Click" CssClass="btn-primary btn" Text="Logg inn" />
+                                    </asp:TableCell>
+                                </asp:TableRow>
+                            </asp:Table>
+                        </div>
+                    </div>
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
     </form>
 </body>
 </html>
